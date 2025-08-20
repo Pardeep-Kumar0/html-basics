@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for SEO and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive HTML practice document showcasing basic to advanced concepts">
+    <meta name="keywords" content="HTML, practice, web development, forms, multimedia">
+    <meta name="author" content="HTML Learning Practice">
+    <meta http-equiv="refresh" content="3600">
+
+
+    <title>Complete HTML Practice | From Basic to Advanced</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="Complete HTML Practice Document">
+    <meta property="og:description" content="Learn HTML from basic to advanced concepts">
+    <meta property="og:type" content="website">
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" as="style">
+
+    <!-- Basic internal CSS for minimal styling (focus is on HTML structure) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .semantic-section {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip navigation for accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header role="banner">
+        <div class="container">
+            <h1>Complete HTML Practice Document</h1>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#basics">HTML Basics</a></li>
+                    <li><a href="#text">Text Elements</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#semantic">Semantic HTML</a></li>
+                    <li><a href="#advanced">Advanced Features</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" role="main">
+        <div class="container">
+
+            <!-- Section 1: HTML Basics -->
+            <section id="basics" class="semantic-section">
+                <header>
+                    <h2>1. HTML Basics & Document Structure</h2>
+                </header>
+                The.
+                <!-- Basic text elements -->
+                <h3>Basic Text Elements</h3>
+                <p>This is a <strong>paragraph</strong> with <em>emphasized text</em>, <mark
+                        class="highlight">highlighted text</mark>,
+                    and <small>small text</small>. We can also show <del>deleted text</del> and <ins>inserted
+                        text</ins>.</p>
+
+                <!-- Headings hierarchy -->
+                <h1>Heading Level 1</h1>
+                <h2>Heading Level 2</h2>
+                <h3>Heading Level 3</h3>
+                <h4>Heading Level 4</h4>
+                <h5>Heading Level 5</h5>
+                <h6>Heading Level 6</h6>
+
+                <!-- Lists -->
+                <h3>Different Types of Lists</h3>
+                <h4>Unordered List</h4>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item with <a href="#" title="Example link">a link</a></li>
+                    <li>Third item
+                        <ul>
+                            <li>Nested item 1</li>
+                            <li>Nested item 2</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Ordered List</h4>
+                <ol type="1" start="1">
+                    <li>First step</li>
+                    <li>Second step</li>
+                    <li>Third step</li>
+                </ol>
+
+                <h4>Description List</h4>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language - the standard markup language for web pages</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets - used for styling HTML elements</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Programming language that enables interactive web pages</dd>
+                </dl>
+            </section>
+
+            <!-- Section 2: Text Formatting & Special Elements -->
+            <section id="text" class="semantic-section">
+                <header>
+                    <h2>2. Advanced Text Elements</h2>
+                </header>
+
+                <!-- Quotes and citations -->
+                <h3>Quotes and Citations</h3>
+                <blockquote cite="https://www.example.com">
+                    <p>"The best way to learn HTML is by practicing and building real projects."</p>
+                    <footer>— <cite>Web Development Expert</cite></footer>
+                </blockquote>
+
+                <p>As Einstein said, <q>Imagination is more important than knowledge.</q></p>
+
+                <!-- Code and preformatted text -->
+                <h3>Code Examples</h3>
+                <p>To create a paragraph, use the <code>&lt;p&gt;</code> tag.</p>
+
+                <pre><code>
+function greetUser(name) {
+    console.log("Hello, " + name + "!");
+}
+                </code></pre>
+
+                <!-- Keyboard and computer output -->
+                <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+                <p>The output will be: <samp>Hello, World!</samp></p>
+                <p>Enter your <var>username</var> in the field below.</p>
+
+                <!-- Time and date -->
+                <p>This document was created on <time datetime="2025-08-12T10:00:00">August 12, 2025</time>.</p>
+
+                <!-- Abbreviations and definitions -->
+                <p>We use <abbr title="HyperText Markup Language">HTML</abbr> to create web pages.</p>
+                <p><dfn>Semantic HTML</dfn> refers to using HTML elements according to their intended meaning.</p>
+            </section>
+
+            <!-- Section 3: Multimedia Elements -->
+            <section id="multimedia" class="semantic-section">
+                <header>
+                    <h2>3. Multimedia Elements</h2>
+                </header>
+
+                <!-- Images with different attributes -->
+                <h3>Images</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/400x200/0066cc/ffffff?text=Sample+Image"
+                        alt="Sample placeholder image showing blue background with white text" width="400" height="200"
+                        loading="lazy" decoding="async">
+                    <figcaption>Figure 1: Sample image with caption</figcaption>
+                </figure>
+
+                <!-- Responsive images -->
+                <h4>Responsive Image</h4>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x400?text=Large+Image">
+                    <source media="(min-width: 400px)" srcset="https://via.placeholder.com/400x200?text=Medium+Image">
+                    <img src="https://via.placeholder.com/200x100?text=Small+Image" alt="Responsive placeholder image">
+                </picture>
+
+                <!-- Audio element -->
+                <h3>Audio</h3>
+                <audio controls preload="metadata">
+                    <source src="audio-sample.mp3" type="audio/mpeg">
+                    <source src="audio-sample.ogg" type="audio/ogg">
+                    <p>Your browser does not support the audio element. <a href="audio-sample.mp3">Download the audio
+                            file</a>.</p>
+                </audio>
+
+                <!-- Video element -->
+                <h3>Video</h3>
+                <video controls width="400" height="200" poster="video-poster.jpg">
+                    <source src="sample-video.mp4" type="video/mp4">
+                    <source src="sample-video.webm" type="video/webm">
+                    <track kind="subtitles" src="subtitles-en.vtt" srclang="en" label="English" default>
+                    <track kind="subtitles" src="subtitles-es.vtt" srclang="es" label="Español">
+                    <p>Your browser does not support the video element. <a href="sample-video.mp4">Download the video
+                            file</a>.</p>
+                </video>
+
+                <!-- Embedded content -->
+                <h3>Embedded Content</h3>
+                <iframe src="https://www.example.com" width="400" height="200" title="Example website iframe"
+                    sandbox="allow-scripts allow-same-origin">
+                    <p>Your browser does not support iframes. <a href="https://www.example.com">Visit the page
+                            directly</a>.</p>
+                </iframe>
+            </section>
+
+            <!-- Section 4: Tables -->
+            <section id="tables" class="semantic-section">
+                <header>
+                    <h2>4. Tables</h2>
+                </header>
+
+                <!-- Complex table with all elements -->
+                <h3>Student Grades Table</h3>
+                <table>
+                    <caption>Semester Grades for Computer Science Students</caption>
+                    <colgroup>
+                        <col style="background-color: #f0f0f0;">
+                        <col span="3" style="background-color: #e8f4f8;">
+                        <col style="background-color: #f0f8e8;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Student Name</th>
+                            <th scope="col">HTML/CSS</th>
+                            <th scope="col">JavaScript</th>
+                            <th scope="col">Database</th>
+                            <th scope="col">Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Alice Johnson</th>
+                            <td>95</td>
+                            <td>88</td>
+                            <td>92</td>
+                            <td>91.7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bob Smith</th>
+                            <td>87</td>
+                            <td>94</td>
+                            <td>89</td>
+                            <td>90.0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Carol Davis</th>
+                            <td>92</td>
+                            <td>86</td>
+                            <td>95</td>
+                            <td>91.0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Class Average</th>
+                            <td>91.3</td>
+                            <td>89.3</td>
+                            <td>92.0</td>
+                            <td>90.9</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <!-- Table with merged cells -->
+                <h3>Schedule Table with Merged Cells</h3>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td colspan="2">Team Meeting</td>
+                        <td>Individual Work</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td rowspan="2">Project Development</td>
+                        <td>Code Review</td>
+                        <td>Testing</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Documentation</td>
+                        <td>Deployment</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Section 5: Forms -->
+            <section id="forms" class="semantic-section">
+                <header>
+                    <h2>5. Forms and Input Elements</h2>
+                </header>
+
+                <!-- Comprehensive form -->
+                <form action="/submit-form" method="post" enctype="multipart/form-data" autocomplete="on">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <input type="text" id="full-name" name="fullName" required
+                                placeholder="Enter your full name" autocomplete="name" minlength="2" maxlength="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="user@example.com"
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8900"
+                                pattern="[+]?[0-9\-\s\(\)]+" autocomplete="tel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthdate">Birth Date</label>
+                            <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2023-12-31"
+                                autocomplete="bday">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="18" max="120" step="1"
+                                placeholder="Enter your age">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" autocomplete="country">
+                                <option value="">Select a country</option>
+                                <optgroup label="North America">
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="mx">Mexico</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="de">Germany</option>
+                                    <option value="fr">France</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Years of Experience</label>
+                            <input type="range" id="experience" name="experience" min="0" max="20" step="1" value="5"
+                                oninput="document.getElementById('exp-value').textContent = this.value">
+                            <output id="exp-value">5</output> years
+                        </div>
+
+                        <fieldset>
+                            <legend>Skills (Check all that apply)</legend>
+                            <div>
+                                <input type="checkbox" id="html" name="skills" value="html">
+                                <label for="html">HTML</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="css" name="skills" value="css">
+                                <label for="css">CSS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="js" name="skills" value="javascript">
+                                <label for="js">JavaScript</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Employment Status</legend>
+                            <div>
+                                <input type="radio" id="employed" name="employment" value="employed">
+                                <label for="employed">Employed</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="unemployed" name="employment" value="unemployed">
+                                <label for="unemployed">Unemployed</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="student" name="employment" value="student">
+                                <label for="student">Student</label>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+
+                        <div class="form-group">
+                            <label for="website">Website URL</label>
+                            <input type="url" id="website" name="website" placeholder="https://www.example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" minlength="8"
+                                placeholder="Enter a secure password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="favorite-color">Favorite Color</label>
+                            <input type="color" id="favorite-color" name="favoriteColor" value="#0066cc">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resume">Upload Resume</label>
+                            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" multiple>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Additional Comments</label>
+                            <textarea id="comments" name="comments" rows="4" cols="50"
+                                placeholder="Enter any additional comments here..." maxlength="500"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="hidden" name="formVersion" value="1.0">
+                            <input type="hidden" name="timestamp" value="">
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <button type="submit">Submit Form</button>
+                        <button type="reset">Reset Form</button>
+                        <button type="button" onclick="alert('Custom button clicked!')">Custom Action</button>
+                    </div>
+                </form>
+
+                <!-- Search form -->
+                <h3>Search Form</h3>
+                <form role="search">
+                    <label for="search">Search:</label>
+                    <input type="search" id="search" name="q" placeholder="Enter search terms...">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <!-- Section 6: Semantic HTML5 -->
+            <section id="semantic" class="semantic-section">
+                <header>
+                    <h2>6. Semantic HTML5 Elements</h2>
+                </header>
+
+                <article>
+                    <header>
+                        <h3>Understanding Semantic HTML</h3>
+                        <p>Published on <time datetime="2025-08-12">August 12, 2025</time> by
+                        <address>Web Developer</address>
+                        </p>
+                    </header>
+
+                    <p>Semantic HTML elements provide meaning to web content beyond just presentation.</p>
+
+                    <section>
+                        <h4>Benefits of Semantic HTML</h4>
+                        <p>Using semantic elements improves accessibility, SEO, and code maintainability.</p>
+                    </section>
+
+                    <aside>
+                        <h4>Quick Tip</h4>
+                        <p>Always choose elements based on meaning, not appearance.</p>
+                    </aside>
+
+                    <footer>
+                        <p>Tags: <span>HTML</span>, <span>Semantics</span>, <span>Web Development</span></p>
+                    </footer>
+                </article>
+
+                <!-- Navigation example -->
+                <nav aria-label="Article pagination">
+                    <a href="#prev" rel="prev">← Previous Article</a>
+                    <a href="#next" rel="next">Next Article →</a>
+                </nav>
+            </section>
+
+            <!-- Section 7: Advanced Features -->
+            <section id="advanced" class="semantic-section">
+                <header>
+                    <h2>7. Advanced HTML Features</h2>
+                </header>
+
+                <!-- Details and summary -->
+                <h3>Interactive Elements</h3>
+                <details>
+                    <summary>Click to expand advanced topics</summary>
+                    <div>
+                        <h4>Web Components</h4>
+                        <p>Custom elements that encapsulate functionality and styling.</p>
+
+                        <h4>Progressive Enhancement</h4>
+                        <p>Building websites that work for everyone, regardless of browser capabilities.</p>
+                    </div>
+                </details>
+
+                <!-- Progress and meter -->
+                <h3>Progress Indicators</h3>
+                <p>Download progress: <progress value="70" max="100">70%</progress></p>
+                <p>Disk usage: <meter value="0.6" min="0" max="1" low="0.5" high="0.8" optimum="0.3">60%</meter></p>
+
+                <!-- Dialog element -->
+                <h3>Dialog Box</h3>
+                <button onclick="document.getElementById('sample-dialog').showModal()">Open Dialog</button>
+                <dialog id="sample-dialog">
+                    <form method="dialog">
+                        <p>This is a modal dialog box!</p>
+                        <button type="submit">Close</button>
+                    </form>
+                </dialog>
+
+                <!-- Data attributes -->
+                <h3>Custom Data Attributes</h3>
+                <div data-user-id="12345" data-user-role="admin" data-last-login="2025-08-12T09:00:00Z">
+                    User dashboard (check console for data attributes)
+                </div>
+
+                <!-- Microdata -->
+                <h3>Microdata for SEO</h3>
+                <div itemscope itemtype="https://schema.org/Person">
+                    <h4 itemprop="name">John Developer</h4>
+                    <p>Job title: <span itemprop="jobTitle">Senior Web Developer</span></p>
+                    <p>Email: <span itemprop="email">john@example.com</span></p>
+                </div>
+
+                <!-- Canvas element -->
+                <h3>Canvas for Graphics</h3>
+                <canvas id="sample-canvas" width="200" height="100" style="border: 1px solid #ccc;">
+                    Canvas is not supported in your browser.
+                </canvas>
+
+                <!-- SVG inline -->
+                <h3>Inline SVG</h3>
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                    <text x="50" y="55" text-anchor="middle" fill="white" font-family="Arial" font-size="14">SVG</text>
+                </svg>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 HTML Practice Document. Created for educational purposes.</p>
+            <address>
+                For questions, contact: <a href="mailto:contact@example.com">contact@example.com</a>
+            </address>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Simple canvas drawing
+        const canvas = document.getElementById('sample-canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#0066cc';
+        ctx.fillRect(10, 10, 180, 80);
+        ctx.fillStyle = 'white';
+        ctx.font = '16px Arial';
+        ctx.fillText('HTML Canvas', 60, 55);
+
+        // Display data attributes
+        const userDiv = document.querySelector('[data-user-id]');
+        console.log('User ID:', userDiv.dataset.userId);
+        console.log('User Role:', userDiv.dataset.userRole);
+        console.log('Last Login:', userDiv.dataset.lastLogin);
+
+        // Set timestamp for hidden form field
+        document.querySelector('input[name="timestamp"]').value = new Date().toISOString();
+    </script>
+</body>
+
+</html>
